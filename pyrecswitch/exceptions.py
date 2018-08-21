@@ -17,10 +17,24 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-__all__ = ['RSDeviceConfig', 'RSMessages', 'RSCommand', 'RSNetwork', 'RSInvalidMessage', 'RSNetworkError']
 
-from .structures import RSDeviceConfig
-from .messages import RSMessages
-from .constants import RSCommand
-from .interfaces import RSNetwork
-from .exceptions import RSInvalidMessage, RSNetworkError
+class RSInvalidMessage(Exception):
+    pass
+
+
+class RSNetworkError(Exception):
+    pass
+
+
+class RSTransportError(RSNetworkError):
+    pass
+
+
+class RSTimeoutError(RSNetworkError):
+    pass
+
+
+
+
+
+
