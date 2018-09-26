@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pyrecswitch",
-    version="1.0.1",
+    version="1.0.2",
     author="Marco Lertora",
     author_email="marco.lertora@gmail.com",
     description="A pure-python interface for controlling Ankuoo RecSwitch MS6126",
