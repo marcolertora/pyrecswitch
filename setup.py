@@ -9,10 +9,14 @@ setuptools.setup(
     author="Marco Lertora",
     author_email="marco.lertora@gmail.com",
     description="A pure-python interface for controlling Ankuoo RecSwitch MS6126",
+    license="AGPLv3+",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/marcolertora/pyrecswitch",
     packages=setuptools.find_packages(),
+    install_requires=[
+            "pycryptodome>=3.6.6",
+    ],
     classifiers=(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
